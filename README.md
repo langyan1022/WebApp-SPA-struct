@@ -1,7 +1,14 @@
 # 移动端单页面骨架 （包含使用范例）
 
-基于 backbone，underscore，backbone.marionette,jquery 2,
-UI: [jquery-weui 0.7.1][1]
+### 骨架基于 
+
+> backbone，underscore，backbone.marionette,jquery 2
+
+### UI: 
+
+> [jquery-weui 0.7.1][1]
+
+
 ![预览图][2]
 
 
