@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no,maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <title>郑州银行支付网关</title>
+    <script type="text/javascript" src="./js/lazyload.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+        LazyLoad.css(["./css/weui.min.css", "./css/styles.css" ], function (arg) {
+            console.log( 'css files has been loaded');
+            LazyLoad.js(['./js/weui-framework/libs/jquery-2.1.4.js'],
+                    function () {
+                        var $loader=$('#loader');
+                        $loader.show();
+
+                        LazyLoad.js([
+                            './js/weui-framework/libs/require.js',
+                            './js/main.js'
+                        ],function(){
+
+                            $loader.fadeOut();
+                        });
+                        console.log('js files have been loaded');
+                    });
+        });
+    </script>
+</head>
+
+<body ontouchstart>
+<div id="app-content">
+    <div id="app-header" class="weui_header"></div>
+    <div id="wrapper">
+        <div id="app-container" class="scroller">
+
+        </div>
+    </div>
+    <div id="app-footer"></div>
+</div>
+</body>
+
+</html>
